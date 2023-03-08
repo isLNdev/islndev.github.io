@@ -1,0 +1,111 @@
+html {
+    height: 100vh;
+    background: linear-gradient(#204, #000);
+    font-family: 'Roboto Slab', serif;
+    font-size: 10px;
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #0a0;    
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo {
+    display: block;
+    grid-column: 2;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+.nav li a {
+    padding: 0.5rem;
+    background-color: rgba(0, 255, 0, 0.1);
+    border-radius: 5px;
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.nav a:hover {
+    background-color: #050;
+    transition: 1s;
+}
+
+.menu-info {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    margin-top: -5.3rem;
+    text-align: center;
+    color: #090;
+}
+
+.menu h3 {
+    font-size: 2.4rem;
+    padding: 1rem;
+    text-align: center;
+}    
+
+.menu-info h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    grid-row: 2;
+    grid-column: 2;
+    align-self: center;
+    max-width: 30rem;
+    margin-left: 1rem;
+}
+
+.menu-info .ft {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 1rem;
+    grid-column: 1;
+}
+
+.menu-info h1 {
+    font-size: 4rem;
+    color: #0c0;
+    letter-spacing: 0.2rem;
+    grid-column: 1;
+    font-weight: 500;
+}
+
+.menu-info p {
+    grid-area: 2 / 3;
+    max-width: 50rem;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(0, 255, 0, 0.2);
+    padding: 13rem 2.2rem;
+    margin-left: 6rem;  
+    border-radius: 10px; 
+}
